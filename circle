@@ -1,0 +1,37 @@
+package circle;
+
+import java.util.Scanner;
+
+public class Circle {
+
+    static float Are(float a) {
+        float pai = (float) 3.1416;
+        float b;
+        b = pai * (a * a);
+        return b;
+    }
+
+    static float per(float a) {
+        float pai = (float) 3.1416;
+        float b;
+        b = 2 * pai * a;
+        return b;
+    }
+
+    public static void main(String[] args) {
+        float Radious, Perimeter, Area;
+
+        System.out.println("Enter your Circle Radious:");
+        Scanner x = new Scanner(System.in);
+        Radious = x.nextFloat();
+
+        Perimeter = per(Radious);
+
+        Area = Are(Radious);
+
+        System.out.println("Perimeter:" + Perimeter);
+        System.out.println("Area:" + Area);
+
+    }
+
+}
